@@ -145,7 +145,7 @@ Instead of bypassing authentication or extracting database contents, the attack 
 
 > Display the normal product category before exploitation.
 
-![Original Product Listing](screenshots/lab-01-product-list-before.png)
+![Original Product Listing](screenshot/lab-01-product-list-before.png)
 
 ---
 
