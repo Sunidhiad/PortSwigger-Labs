@@ -143,30 +143,38 @@ Instead of bypassing authentication or extracting database contents, the attack 
 
 ## Screenshot 1 - Original Product Listing
 
-> Display the normal product category before exploitation.
+![Original Product Listing](screenshots/lab-01-product-list-before.png)
 
-![Original Product Listing](screenshot/lab-01-product-list-before.png)
+**Explanation:**
 
----
-
-## Screenshot 2 - Intercepted Request
-
-> Burp Suite showing the original request containing the `category` parameter.
-
-*(Add Screenshot Here)*
+The application displays only released products before the SQL injection attack.
 
 ---
 
-## Screenshot 3 - Modified SQL Injection Payload
+## Screenshot 2 - Original Request
 
-> Burp Suite showing the payload `' OR 1=1--` injected into the `category` parameter.
+![Original Request](screenshots/lab-01-original-request.png)
 
-*(Add Screenshot Here)*
+**Explanation:**
+
+Burp Suite intercepts the request containing the vulnerable `category` parameter before any modifications are made.
 
 ---
 
-## Screenshot 4 - Successful Exploitation
+## Screenshot 3 - SQL Injection Payload
 
-> The application displays unreleased products after the SQL injection payload is processed.
+![SQL Injection Payload](screenshots/lab-01-sqli-payload.png)
 
-*(Add Screenshot Here)*
+**Explanation:**
+
+The payload `' OR 1=1--` is injected into the `category` parameter, causing the WHERE clause to always evaluate to true.
+
+---
+
+## Screenshot 4 - Hidden Products Displayed
+
+![Hidden Products Displayed](screenshots/lab-01-hidden-products-displayed.png)
+
+**Explanation:**
+
+After forwarding the modified request, the application returns both released and unreleased products, confirming successful exploitation of the SQL injection vulnerability.
