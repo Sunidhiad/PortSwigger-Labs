@@ -143,7 +143,7 @@ Instead of bypassing authentication or extracting database contents, the attack 
 
 ## Screenshot 1 - Original Product Listing
 
-![Original Product Listing](screenshots/lab-01-product-list-before.png)
+![Original Product Listing](Screenshots/lab-01-product-list-before.png)
 
 **Explanation:**
 
@@ -153,7 +153,7 @@ The application displays only released products before the SQL injection attack.
 
 ## Screenshot 2 - Original Request
 
-![Original Request](screenshots/lab-01-original-request.png)
+![Original Request](Screenshots/lab-01-original-request.png)
 
 **Explanation:**
 
@@ -163,7 +163,7 @@ Burp Suite intercepts the request containing the vulnerable `category` parameter
 
 ## Screenshot 3 - SQL Injection Payload
 
-![SQL Injection Payload](screenshots/lab-01-sqli-payload.png)
+![SQL Injection Payload](Screenshots/lab-01-sqli-payload.png)
 
 **Explanation:**
 
@@ -173,7 +173,7 @@ The payload `' OR 1=1--` is injected into the `category` parameter, causing the 
 
 ## Screenshot 4 - Hidden Products Displayed
 
-![Hidden Products Displayed](screenshots/lab-01-hidden-products-displayed.png)
+![Hidden Products Displayed](Screenshots/lab-01-hidden-products-displayed.png)
 
 **Explanation:**
 
