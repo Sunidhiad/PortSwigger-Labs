@@ -31,9 +31,9 @@ Access the lab and navigate to the login page.
 
 **Screenshot:**
 
-```
-![Original Request](screenshots/lab-02-01-login-page.png)
-```
+
+![Login Page](screenshots/lab-02-01-login-page.png)
+
 
 ---
 
@@ -43,9 +43,9 @@ Intercept the login request using Burp Suite.
 
 **Screenshot:**
 
-```
-![Original Request](screenshots/lab-02-02-burp-intercept.png)
-```
+
+![Login Page](screenshots/lab-02-02-burp-intercept.png)
+
 
 ---
 
@@ -67,9 +67,9 @@ username=administrator'--&password=test
 
 **Screenshot:**
 
-```
-![Original Request](screenshots/lab-02-03-modified-request.png)
-```
+
+![Login Page](screenshots/lab-02-03-modified-request.png)
+
 
 ---
 
@@ -81,9 +81,9 @@ The application authenticates the request as the administrator user.
 
 **Screenshot:**
 
-```
-![Original Request](screenshots/lab-02-04-admin-dashboard.png)
-```
+
+![Login Page](screenshots/lab-02-04-admin-dashboard.png)
+
 
 ---
 
